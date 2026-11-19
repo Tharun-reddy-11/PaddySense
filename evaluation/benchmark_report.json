@@ -1,0 +1,27 @@
+{
+  "Linear Regression (Baseline)": {
+    "MAE": 366.77,
+    "RMSE": 687.31,
+    "R2": -2.0016
+  },
+  "Random Forest Regressor": {
+    "MAE": 115.78,
+    "RMSE": 153.5,
+    "R2": 0.8503
+  },
+  "XGBoost Regressor": {
+    "MAE": 116.81,
+    "RMSE": 153.31,
+    "R2": 0.8506
+  },
+  "CatBoost Regressor": {
+    "MAE": 135.27,
+    "RMSE": 169.38,
+    "R2": 0.8177
+  },
+  "LightGBM Regressor": {
+    "MAE": 186.36,
+    "RMSE": 277.47,
+    "R2": 0.5108
+  }
+}

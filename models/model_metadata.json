@@ -1,0 +1,78 @@
+{
+  "model_name": "PaddySense Methane Estimation Engine",
+  "model_version": "1.0.0-PROD",
+  "selected_algorithm": "XGBoost Regressor",
+  "benchmark_comparison": {
+    "Linear Regression (Baseline)": {
+      "MAE": 366.77,
+      "RMSE": 687.31,
+      "R2": -2.0016
+    },
+    "Random Forest Regressor": {
+      "MAE": 115.78,
+      "RMSE": 153.5,
+      "R2": 0.8503
+    },
+    "XGBoost Regressor": {
+      "MAE": 116.81,
+      "RMSE": 153.31,
+      "R2": 0.8506
+    },
+    "CatBoost Regressor": {
+      "MAE": 135.27,
+      "RMSE": 169.38,
+      "R2": 0.8177
+    },
+    "LightGBM Regressor": {
+      "MAE": 186.36,
+      "RMSE": 277.47,
+      "R2": 0.5108
+    }
+  },
+  "target_variable": "Seasonal Methane Emission Intensity (kg CH4/ha/season)",
+  "target_units": "kg CH4/ha/season",
+  "validation_strategy": "5-Fold Site-Stratified GroupKFold (Leakage-Proof)",
+  "total_training_samples": 101,
+  "unique_experimental_sites": 45,
+  "numeric_features": [
+    "soil_organic_carbon_pct",
+    "soil_ph",
+    "soil_nitrogen_pct",
+    "bulk_density_g_cm3",
+    "flooding_duration_days",
+    "drying_duration_days",
+    "water_depth_cm",
+    "irrigation_frequency_season",
+    "nitrogen_fertilizer_kg_ha",
+    "fertilizer_split_count",
+    "straw_residue_kg_ha",
+    "crop_duration_days",
+    "avg_temperature_c",
+    "total_rainfall_mm",
+    "relative_humidity_pct"
+  ],
+  "categorical_features": [
+    "soil_texture",
+    "water_management_method",
+    "fertilizer_type",
+    "fertilizer_application_method",
+    "straw_residue_management",
+    "rice_variety_group",
+    "planting_method"
+  ],
+  "processed_feature_count": 41,
+  "calibrated_classifier_accuracy": 0.4653,
+  "calibrated_classifier_macro_f1": 0.1588,
+  "uncertainty_90_half_width": 236.0,
+  "uncertainty_95_half_width": 277.79,
+  "risk_thresholds": {
+    "Low": "< 100 kg CH4/ha/season",
+    "Moderate": "100 - 180 kg CH4/ha/season",
+    "High": "180 - 280 kg CH4/ha/season",
+    "Very High": "> 280 kg CH4/ha/season"
+  },
+  "disclaimers": [
+    "TreeSHAP feature attributions describe model predictive associations and do not prove causal agronomic effects.",
+    "Alternate Wetting and Drying (AWD) reduces methane emissions but can elevate nitrous oxide (N2O) emissions in certain soils."
+  ]
+}

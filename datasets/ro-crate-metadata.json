@@ -1,0 +1,298 @@
+{
+"@context": "https://w3id.org/ro/crate/1.2/context",
+"@graph": [
+{
+"@type": "CreativeWork",
+"@id": "ro-crate-metadata.json",
+"conformsTo": { "@id": "https://w3id.org/ro/crate/1.2" },
+"about": { "@id": "https://catalogue.ceh.ac.uk/id/46aafc00-6742-41df-b8be-09a8d5d86610" }
+},
+{
+"@type":"Dataset",
+"name":"Experimental crop biomass and gas flux (methane, nitrous oxide, and ammonia) data from continuous and intermittently flooded rice fields under different fertiliser treatments, India, July-October, 2016",
+"@id": "https://catalogue.ceh.ac.uk/id/46aafc00-6742-41df-b8be-09a8d5d86610",
+"identifier": {"@id": "https://doi.org/10.5285/46aafc00-6742-41df-b8be-09a8d5d86610"},
+"citation":"Cowan, N., Bhatia, A., Jain, N., Drewer, J. (2024). Experimental crop biomass and gas flux (methane, nitrous oxide, and ammonia) data from continuous and intermittently flooded rice fields under different fertiliser treatments, India, July-October, 2016. NERC EDS Environmental Information Data Centre. (Dataset). https://doi.org/10.5285/46aafc00-6742-41df-b8be-09a8d5d86610",
+"hasPart": [
+{"@id":
+"data/crop_biomass_n.csv"
+} ,
+{"@id":
+"data/irrigation.csv"
+} ,
+{"@id":
+"data/n2o_ch4.csv"
+} ,
+{"@id":
+"data/nh3.csv"
+} ,
+{"@id":
+"data/site_properties.csv"
+} ,
+{"@id":
+"data/soil_no3_nh4.csv"
+} ,
+{"@id":
+"data/weather.csv"
+} ,
+{"@id":
+"supporting-documents/data_iari_2016_description.docx"
+} ],
+"description":"This dataset contains rice crop biomass, and greenhouse gas flux measurements from five plots exposed to different fertiliser treatments and continuous and intermittent irrigation protocols. The gas flux data include methane, nitrous oxide, and ammonia, which were measured using chamber methodologies. The dataset also includes irrigation protocols and site environmental properties such as soil pH, bulk density, and texture. Agronomic yields are reported in terms of rice grain and total crop harvests as well as total nitrogen use efficiency. This dataset was created as part of an experiment carried out in rice paddies at the Indian Agricultural Research Institute (Delhi, India) in 2016. The experiment aimed to compare the environmental impacts of continuous and intermittent flooding of rice in relation to methane, nitrous oxide and ammonia emissions and the implications for nitrogen use efficiency and yield.",
+"isAccessibleForFree": true,
+"datePublished":"2024-09-18",
+"keywords": [
+"nitrous oxide"
+,
+"rice paddy"
+,
+"urea"
+,
+{"@type": "DefinedTerm","@id": "http://onto.nerc.ac.uk/CEHMD/topic/1","name": "Agriculture" }
+,
+{"@type": "DefinedTerm","@id": "http://www.eionet.europa.eu/gemet/concept/13209","name": "crop production","inDefinedTermSet": "https://www.eionet.europa.eu/gemet/" }
+,
+{"@type": "DefinedTerm","@id": "http://www.eionet.europa.eu/gemet/concept/3169","name": "fertiliser","inDefinedTermSet": "https://www.eionet.europa.eu/gemet/" }
+,
+{"@type": "DefinedTerm","@id": "http://www.eionet.europa.eu/gemet/concept/375","name": "ammonia","inDefinedTermSet": "https://www.eionet.europa.eu/gemet/" }
+,
+{"@type": "DefinedTerm","@id": "http://www.eionet.europa.eu/gemet/concept/3763","name": "greenhouse gas","inDefinedTermSet": "https://www.eionet.europa.eu/gemet/" }
+,
+{"@type": "DefinedTerm","@id": "http://www.eionet.europa.eu/gemet/concept/4505","name": "irrigation","inDefinedTermSet": "https://www.eionet.europa.eu/gemet/" }
+,
+{"@type": "DefinedTerm","@id": "http://www.eionet.europa.eu/gemet/concept/5199","name": "methane","inDefinedTermSet": "https://www.eionet.europa.eu/gemet/" }
+,
+{"@type": "DefinedTerm","@id": "http://www.eionet.europa.eu/gemet/concept/5605","name": "nitrogen","inDefinedTermSet": "https://www.eionet.europa.eu/gemet/" }
+],
+"creator": [
+{"@id": "https://orcid.org/0000-0002-7473-7916"},
+{"@id": "#creator1"},
+{"@id": "https://orcid.org/0000-0001-6387-7836"},
+{"@id": "https://orcid.org/0000-0002-6263-6341"}
+],
+"temporalCoverage":[
+"2016-07-01/2016-10-31" ],
+"spatialCoverage": [ {"@id": "#bbox0"}],
+"funding": [ {"@id": "https://gtr.ukri.org/projects?ref=BB/N013492/1"}
+,
+{"@id": "https://gtr.ukri.org/projects?ref=NE/S009019/1"}
+,
+{"@id": "#fund2"}
+],
+"license": {"@id": "https://spdx.org/licenses/OGL-UK-3.0"},
+"distribution": [ {"@id": "#distribution0"}],
+"publisher":{"@id":"https://ror.org/04xw4m193"},
+"provider" : {"@id":"https://ror.org/04xw4m193"},
+"includedInDataCatalog":{ "@id": "#eidc-dataCatalogue"}
+},
+{
+"@id": "#eidc-dataCatalogue",
+"@type":"DataCatalog",
+"name":"Environmental Information Data Centre",
+"alternateName":"EIDC",
+"url":"https://catalogue.ceh.ac.uk/eidc/documents"
+},
+{
+"@id": "https://ror.org/04xw4m193",
+"@type":"Organization",
+"name":"NERC EDS Environmental Information Data Centre",
+"email": "info@eidc.ac.uk"
+}
+,{
+"@id": "https://spdx.org/licenses/OGL-UK-3.0",
+"@type": "CreativeWork",
+"name": "Open Government Licence v3",
+"alternateName":"OGL-UK-3.0",
+"sameAs": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+}
+,{
+"@id": "https://doi.org/10.5285/46aafc00-6742-41df-b8be-09a8d5d86610",
+"@type":"PropertyValue",
+"propertyID": "https://registry.identifiers.org/registry/doi",
+"value": "10.5285/46aafc00-6742-41df-b8be-09a8d5d86610",
+"url": "https://doi.org/10.5285/46aafc00-6742-41df-b8be-09a8d5d86610"
+}
+, {
+"@id": "#bbox0",
+"@type":"Place",
+"geo": {
+"@id": "#geoshape0"
+}
+},
+{
+"@id": "#geoshape0",
+"@type": "GeoShape",
+"box":"77.161 28.659, 77.161 28.659"
+}
+,
+{
+"@id": "https://orcid.org/0000-0002-7473-7916",
+"@type": "Person",
+"name": "Cowan, N."
+, "familyName": "Cowan"
+, "givenName": "N."
+,"affiliation":{
+"@id": "https://ror.org/00pggkr55"
+}
+},
+{
+"@id": "#creator1",
+"@type": "Person",
+"name": "Bhatia, A."
+, "familyName": "Bhatia"
+, "givenName": "A."
+,"affiliation":{
+"@type":"Organization",
+"name":"ICAR-Indian Agricultural Research Institute"
+}
+},
+{
+"@id": "https://orcid.org/0000-0001-6387-7836",
+"@type": "Person",
+"name": "Jain, N."
+, "familyName": "Jain"
+, "givenName": "N."
+,"affiliation":{
+"@type":"Organization",
+"name":"ICAR-Indian Agricultural Research Institute"
+}
+},
+{
+"@id": "https://orcid.org/0000-0002-6263-6341",
+"@type": "Person",
+"name": "Drewer, J."
+, "familyName": "Drewer"
+, "givenName": "J."
+,"affiliation":{
+"@id": "https://ror.org/00pggkr55"
+}
+}
+, {
+"@id": "https://gtr.ukri.org/projects?ref=BB/N013492/1",
+"@type": "MonetaryGrant"
+,"name": "NEWS India-UK"
+,"identifier": "BB/N013492/1"
+,"funder": {"@id": "https://ror.org/00cwqg982"}
+}
+,{
+"@id": "https://ror.org/00cwqg982",
+"@type": "Organization"
+,"name": "Biotechnology and Biological Sciences Research Council"
+}
+,
+{
+"@id": "https://gtr.ukri.org/projects?ref=NE/S009019/1",
+"@type": "MonetaryGrant"
+,"identifier": "NE/S009019/1"
+,"funder": {"@id": "https://ror.org/02b5d8509"}
+}
+,{
+"@id": "https://ror.org/02b5d8509",
+"@type": "Organization"
+,"name": "Natural Environment Research Council"
+}
+,
+{
+"@id": "#fund2",
+"@type": "MonetaryGrant"
+,"identifier": "NICRA-IARI/12-115"
+,"funder": {"@id": "#funderOrg2"}
+}
+,{
+"@id": "#funderOrg2",
+"@type": "Organization"
+,"name": "National Initiative for Climate Resilient Agriculture Project "
+}
+, {
+"@id":
+"data/crop_biomass_n.csv"
+,"name": "crop_biomass_n.csv","@type": "File"
+,"encodingFormat": "text/csv"
+,"sha256": "3ba5d97b2a52857afa676b0b7516d322a74a5971f954af3bd08a2d42387e160b"
+,"lastModified": "2024-09-18T15:25:40"
+,"bytes": 1939
+,"contentUrl": "data/crop_biomass_n.csv"
+}
+, {
+"@id":
+"data/irrigation.csv"
+,"name": "irrigation.csv","@type": "File"
+,"encodingFormat": "text/csv"
+,"sha256": "c191a87e51f78e48bdf241395d67c1f3ced56deb168aa524ecacd7c9ab3de946"
+,"lastModified": "2024-09-18T15:25:43"
+,"bytes": 1308
+,"contentUrl": "data/irrigation.csv"
+}
+, {
+"@id":
+"data/n2o_ch4.csv"
+,"name": "n2o_ch4.csv","@type": "File"
+,"encodingFormat": "text/csv"
+,"sha256": "0519c523c1d4c8b48466e3a65ceb3d80a853898d3d6101a80d6509aedc9984bf"
+,"lastModified": "2024-09-18T15:25:44"
+,"bytes": 29609
+,"contentUrl": "data/n2o_ch4.csv"
+}
+, {
+"@id":
+"data/nh3.csv"
+,"name": "nh3.csv","@type": "File"
+,"encodingFormat": "text/csv"
+,"sha256": "f51b6ce5a7160ec1eabd00682e33381b047f4c519d677ae50943e7037862cbee"
+,"lastModified": "2024-09-18T15:25:45"
+,"bytes": 20467
+,"contentUrl": "data/nh3.csv"
+}
+, {
+"@id":
+"data/site_properties.csv"
+,"name": "site_properties.csv","@type": "File"
+,"encodingFormat": "text/csv"
+,"sha256": "e469406eb2b0c43e512046aeacd6f5872c59b766186b4e6548c3e3faf233c6a2"
+,"lastModified": "2024-09-18T15:25:47"
+,"bytes": 1811
+,"contentUrl": "data/site_properties.csv"
+}
+, {
+"@id":
+"data/soil_no3_nh4.csv"
+,"name": "soil_no3_nh4.csv","@type": "File"
+,"encodingFormat": "text/csv"
+,"sha256": "8eedbc2c12c9b3304c82717a433a5b0e728c0d252938e185605fc5cc530f6da5"
+,"lastModified": "2024-09-18T15:25:49"
+,"bytes": 1026
+,"contentUrl": "data/soil_no3_nh4.csv"
+}
+, {
+"@id":
+"data/weather.csv"
+,"name": "weather.csv","@type": "File"
+,"encodingFormat": "text/csv"
+,"sha256": "0236500ccee5e279c0af1bde68160c620a70257869c9cbcfb7de9ae31220f374"
+,"lastModified": "2024-09-18T15:25:51"
+,"bytes": 7474
+,"contentUrl": "data/weather.csv"
+}
+, {
+"@id":
+"supporting-documents/data_iari_2016_description.docx"
+,"name": "data_iari_2016_description.docx","@type": "File"
+,"sha256": "23a863d375633b6abd10a6eabd12d2a3f2dd69556cd177075a2b980278fcf188"
+,"lastModified": "2024-09-18T15:25:41"
+,"bytes": 40869
+,"contentUrl": "supporting-documents/data_iari_2016_description.docx"
+}
+, {
+"@id": "#distribution0",
+"@type":"DataDownload",
+"contentUrl":"https://data-package.ceh.ac.uk/data/46aafc00-6742-41df-b8be-09a8d5d86610"
+,"encodingFormat":"application/zip"
+}
+, {
+"@id": "https://ror.org/00pggkr55",
+"@type": "Organization",
+"name": "UK Centre for Ecology & Hydrology",
+"identifier": "https://ror.org/00pggkr55"
+}
+]
+}
